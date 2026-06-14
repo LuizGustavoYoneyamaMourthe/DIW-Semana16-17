@@ -97,7 +97,7 @@ header h1 {
 /* sessão dos decks */
 .decks-section {
     flex: 1;
-    padding: 40px 20px;
+    padding: 40px 20px 20px;
     background-color: #f5f5f5;
 }
 
@@ -161,6 +161,173 @@ header h1 {
 
 .deck-content p {
     font-size: 0.9rem;
+}
+
+/* CRUD de decks */
+.crud-section {
+    padding: 20px 20px 40px;
+    background-color: #f5f5f5;
+}
+
+.crud-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.crud-header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.crud-header p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.deck-form {
+    display: grid;
+    gap: 16px;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-actions,
+.crud-search {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.btn {
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #222;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #444;
+}
+
+.btn-secondary {
+    background-color: #e5e5e5;
+    color: #222;
+}
+
+.btn-secondary:hover {
+    background-color: #d0d0d0;
+}
+
+.crud-search input {
+    flex: 1;
+    min-width: 240px;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.crud-status {
+    min-height: 24px;
+    margin: 16px 0;
+    color: #444;
+    font-weight: 600;
+}
+
+.crud-status.success {
+    color: #1f7a1f;
+}
+
+.crud-status.error {
+    color: #b42318;
+}
+
+.crud-list-wrapper {
+    margin-top: 20px;
+}
+
+.crud-list-wrapper h3 {
+    margin-bottom: 12px;
+    color: #222;
+}
+
+.crud-list {
+    list-style: none;
+    display: grid;
+    gap: 12px;
+}
+
+.crud-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background-color: #fcfcfc;
+}
+
+.crud-item h4 {
+    margin-bottom: 4px;
+    color: #222;
+}
+
+.crud-item p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.crud-item-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.crud-item-actions button {
+    border: none;
+    background: none;
+    color: #222;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.crud-item-actions button:hover {
+    background-color: #f0f0f0;
 }
 
 /* DETALHES PAGE */
@@ -374,6 +541,20 @@ footer {
 
     .decks-section h2 {
         font-size: 1.5rem;
+    }
+
+    .crud-container {
+        padding: 20px;
+    }
+
+    .crud-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .crud-item-actions {
+        width: 100%;
+        justify-content: flex-end;
     }
 
     .footer-content {

@@ -32,6 +32,52 @@
         <div class="decks-grid" id="cards-container"></div>
     </section>
 
+    <section class="crud-section">
+        <div class="crud-container">
+            <div class="crud-header">
+                <h2>Adicione seu deck</h2>
+                <p>Crie, edite, encontre e remova decks em um só lugar.</p>
+            </div>
+
+            <form id="deck-form" class="deck-form">
+                <input type="hidden" id="deck-id">
+
+                <div class="form-group">
+                    <label for="deck-title">Título</label>
+                    <input type="text" id="deck-title" name="titulo" placeholder="Ex.: Mono Red Burn" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="deck-description">Descrição</label>
+                    <input type="text" id="deck-description" name="descricao" placeholder="Ex.: Deck agressivo e direto" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="deck-content">Conteúdo</label>
+                    <textarea id="deck-content" name="conteudo" rows="4" placeholder="Descreva como este deck funciona..." required></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Salvar deck</button>
+                    <button type="button" id="cancel-edit" class="btn btn-secondary">Cancelar</button>
+                </div>
+            </form>
+
+            <div class="crud-search">
+                <input type="text" id="search-name" placeholder="Procure um deck pelo nome">
+                <button type="button" id="search-button" class="btn btn-primary">Buscar</button>
+                <button type="button" id="show-all-button" class="btn btn-secondary">Mostrar todos</button>
+            </div>
+
+            <div id="crud-status" class="crud-status" aria-live="polite"></div>
+
+            <div class="crud-list-wrapper">
+                <h3>Decks cadastrados</h3>
+                <ul id="crud-list" class="crud-list"></ul>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="footer-content">
             <div class="footer-logo-info">

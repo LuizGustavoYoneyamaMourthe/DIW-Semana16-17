@@ -1,7 +1,7 @@
 {
   "decks": [
     {
-      "id": 1,
+      "id": "1",
       "titulo": "White Classic Meekstone",
       "descricao": "Deck baseado em vigilancia e inflar criaturas",
       "conteudo": "Este deck utiliza encantamentos de inflar e criaturas classicas de vigilancia, criando um equilibrio entre ataque e defesa.",
@@ -22,7 +22,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "titulo": "Black Sacrifice",
       "descricao": "Sacrifício e drenar vida",
       "conteudo": "Deck baseado na mecanica de sacrificio e gerar mana.",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "titulo": "Bloco Urza Stomp",
       "descricao": "Mono green do bloco de urza",
       "conteudo": "Utiliza somente criaturas do bloco de urza de alto valor para pisotear os adversários.",
@@ -64,7 +64,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": "4",
       "titulo": "Mono red burn",
       "descricao": "Aprecie o poder da reverberação",
       "conteudo": "Distribua violência com estilo utilizando mono red clássico premodern.",
@@ -83,6 +83,23 @@
           "imagem": "assets/img/howlingmine.jpg"
         }
       ]
+    },
+    {
+      "id": "Tm6pY-zwES4",
+      "titulo": "White Stax",
+      "descricao": "Controle a mesa com fumaça e terror",
+      "conteudo": "Smokestack, sacrifício, aumento do custo de mana e muita dor",
+      "imagem": "assets/img/white.jpg",
+      "cartas_principais": []
+    },
+    {
+      "id": "8uaUECx7_lc",
+      "titulo": "Deck Felipe",
+      "descricao": "Neblina com howling mine",
+      "conteudo": "Se perca na nevoa e acaba com seus oponentes em um jogo terrivelmente agonizante",
+      "imagem": "assets/img/white.jpg",
+      "cartas_principais": []
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
